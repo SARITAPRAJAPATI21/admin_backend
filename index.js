@@ -10,7 +10,11 @@ const port = process.env.PORT || 3000;
 connectDB();
 
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+  {
+    origin: "https://admin-dashboard-two-gamma-31.vercel.app/",
+  }
+))
 app.use('/api/user',userRoute)
 
 app.get('/', (req, res) => {
