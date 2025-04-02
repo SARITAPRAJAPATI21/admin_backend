@@ -12,7 +12,7 @@ connectDB();
 app.use(express.json())
 app.use(cors(
   {
-    origin: "https://admin-dashboard-two-gamma-31.vercel.app",
+    origin: "*",
   }
 ))
 app.use('/api/user',userRoute)
