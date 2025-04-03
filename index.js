@@ -12,7 +12,7 @@ connectDB();
 app.use(express.json())
 app.use(cors(
   {
-    origin: "https://admin-dashboard-api-iota.vercel.app",
+    origin: "https://admin-dashboard-api-iota.vercel.app/login",
   }
 ))
 app.use('/api/user',userRoute)
