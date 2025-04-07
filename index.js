@@ -15,7 +15,7 @@ app.use(express.json())
 
 
 app.use(cors({
-  origin:'https://admin-dashboard-nmi4xeqaj-saritas-projects-ee5fd3a5.vercel.app/' 
+  origin:'https://admin-dashboard-nmi4xeqaj-saritas-projects-ee5fd3a5.vercel.app' 
     
 }))
 console.log(process.env.CLIENT_URL)
