@@ -15,7 +15,7 @@ app.use(express.json())
 
 
 app.use(cors({
-  origin:'https://admin-dashboard-api-iota.vercel.app/' 
+  origin:'https://admin-dashboard-api-iota.vercel.app' 
     
 }))
 console.log(process.env.CLIENT_URL)
