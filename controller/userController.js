@@ -55,8 +55,9 @@ const loginUser = async(req,res)=> {
 
 
 const ResetPassword = async(req,res)=>{
+  
   const {email,cpassword}=req.body;
-  console.log(email,cpassword)
+  console.log(email,cpassword,'reset password')
   try {
     const existingUser = await User.findOne({ email });
     if (!existingUser) return res.status(404).json({ message: "User not found" });
